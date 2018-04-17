@@ -1,0 +1,5 @@
+usr/bin/drmaa-run
+usr/bin/drmaa-run-bulk
+usr/bin/hpc-bash
+usr/etc/slurm_drmaa.conf.example
+usr/lib/libdrmaa.so*
