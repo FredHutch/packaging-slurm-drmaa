@@ -9,7 +9,7 @@
 override_dh_auto_configure:
 	./configure --with-slurm-inc=/usr/include/slurm/ \
 		--with-slurm-lib=/usr/lib/libslurm.so \
-		--prefix=/usr
+		--prefix=/usr/lib/slurm-drmaa
 
 get-orig-source:
 	# Uscan will read debian/watch, grab the correct version,
