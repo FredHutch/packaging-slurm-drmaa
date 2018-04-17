@@ -4,10 +4,10 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@
+	dh $@ --builddirectory --with autoreconf
 
 override_dh_auto_configure:
-	./autogen.sh --with-slurm-inc=/usr/include/slurm/ \
+	./configure --with-slurm-inc=/usr/include/slurm/ \
 		--with-slurm-lib=/usr/lib/libslurm.so \
 		--prefix=/usr
 
