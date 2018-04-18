@@ -2,4 +2,4 @@ usr/lib/slurm-drmaa/bin/drmaa-run
 usr/lib/slurm-drmaa/bin/drmaa-run-bulk
 usr/lib/slurm-drmaa/bin/hpc-bash
 usr/lib/slurm-drmaa/etc/slurm_drmaa.conf.example
-usr/lib/slurm-drmaa/libdrmaa.so*
+usr/lib/slurm-drmaa/lib/libdrmaa.so*
