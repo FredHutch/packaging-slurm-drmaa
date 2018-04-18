@@ -3,12 +3,20 @@
 set -e
 
 update-alternatives \
- --install \
+  --install \
    /usr/lib/libdrmaa.so libdrmaa.so /usr/lib/slurm-drmaa/lib/libdrmaa.so 40 \
- --slave \
+  --slave \
    /usr/lib/libdrmaa.so.1 libdrmaa.so.1 /usr/lib/slurm-drmaa/lib/libdrmaa.so.1 \
- --slave \
-   /usr/lib/libdrmaa.so.1.0.8 libdrmaa.so.1.0.8 /usr/lib/slurm-drmaa/lib/libdrmaa.so.1.0.8
+  --slave \
+   /usr/lib/libdrmaa.so.1.0.8 libdrmaa.so.1.0.8 /usr/lib/slurm-drmaa/lib/libdrmaa.so.1.0.8 \
+  --slave \
+   /usr/bin/drmaa-run drmaa-run /usr/lib/slurm-drmaa/bin/drmaa-run \
+  --slave \
+   /usr/bin/drmaa-run-bulk drmaa-run-bulk /usr/lib/slurm-drmaa/bin/drmaa-run-bulk \
+  --slave \
+   /usr/bin/hpc-bash hpc-bash /usr/lib/slurm-drmaa/bin/hpc-bash \
+  --slave \
+   /etc/slurm_drmaa.conf.example slurm_drmaa.conf.example /usr/lib/slurm-drmaa/etc/slurm_drmaa.conf.example
 
 #DEBHELPER#
 
