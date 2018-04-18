@@ -3,8 +3,13 @@
 set -e
 
 update-alternatives \
-        --install /usr/lib/libdrmaa.so libdrmaa.so /usr/lib/slurm-drmaa/lib/libdrmaa.so 40 \
-	--slave /usr/include/drmaa.h drmaa.h /usr/lib/slurm-drmaa/include/drmaa.h
+  --install \
+    /usr/include/drmaa.h drmaa.h /usr/lib/slurm-drmaa/include/drmaa.h 40 \
+  --slave \
+    /usr/lib/libdrmaa.la libdrmaa.la /usr/lib/slurm-drmaa/lib/libdrmaa.la \
+  --slave \
+    /usr/lib/libdrmaa.a libdrmaa.a /usr/lib/slurm-drmaa/lib/libdrmaa.a
+
 
 #DEBHELPER#
 

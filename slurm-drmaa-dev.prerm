@@ -3,7 +3,7 @@
 set -e
 
 if [ "$1" != "upgrade" ]; then
-	update-alternatives --remove libdrmaa.so /usr/lib/slurm-drmaa/lib/libdrmaa.so
+	update-alternatives --remove drmaa.h /usr/lib/slurm-drmaa/include/drmaa.h
 fi
 
 #DEBHELPER#
