@@ -4,7 +4,11 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --builddirectory --with autoreconf
+	dh $@ --with autoreconf
+
+override_dh_autoreconf:
+	dh_autoreconf
+	cd drmaa-utils && ./autogen.sh
 
 override_dh_auto_configure:
 	./configure --with-slurm-inc=/usr/include/slurm/ \
