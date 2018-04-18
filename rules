@@ -12,8 +12,7 @@ override_dh_autoreconf:
 		--prefix=/usr/lib/slurm-drmaa
 
 override_dh_auto_configure:
-	#  autogen script handles the configure step
-	;
+	echo autogen script handles the configure step
 
 get-orig-source:
 	# Uscan will read debian/watch, grab the correct version,
