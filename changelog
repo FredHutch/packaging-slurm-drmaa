@@ -1,3 +1,10 @@
+slurm-drmaa (1.2.0-slurm18) trusty; urgency=medium
+
+  * rebuild for slurm 18
+  * new naming scheme
+
+ -- Michael Gutteridge <mrg@fredhutch.org>  Wed, 31 Oct 2018 10:56:40 -0700
+
 slurm-drmaa (1.2.0-1fhcrc1~ubuntu14.04) trusty; urgency=medium
 
   * New Upstream version
