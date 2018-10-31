@@ -7,8 +7,8 @@
 	dh $@ --with autoreconf
 
 override_dh_autoreconf:
-	./autogen.sh --with-slurm-inc=/usr/include/slurm/ \
-		--with-slurm-lib=/usr/lib/libslurm.so \
+	./autogen.sh --with-slurm-inc=/usr/include/slurm-wlm/ \
+		--with-slurm-lib=/usr/lib/x86_64-linux-gnu/libslurm.so \
 		--prefix=/usr/lib/slurm-drmaa
 
 override_dh_auto_configure:
